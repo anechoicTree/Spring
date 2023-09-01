@@ -1,0 +1,6 @@
+package hello;
+
+public interface ITranslator {
+
+	public int doTrans(int selectedLanguage);
+}

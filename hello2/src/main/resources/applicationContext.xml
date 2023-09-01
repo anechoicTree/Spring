@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="myPrinter" class="hello.MyPrinter" />
+	<bean id="transEng" class="hello.TransEng" />
+	<bean id="transKor" class="hello.TransKor" />
+	
+	<bean id="printAssembler" class="hello.PrintAssembler">
+		<constructor-arg ref="myPrinter" />
+		<constructor-arg ref="transEng" />
+		<constructor-arg ref="transKor" />
+	</bean>
+
+</beans>

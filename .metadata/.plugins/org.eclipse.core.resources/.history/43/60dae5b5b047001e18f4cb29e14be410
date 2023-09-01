@@ -1,0 +1,12 @@
+package ch02_pjt_01;
+
+public class CalMul implements ICalculator{
+	
+	CalMul calMul = new CalMul();
+	
+	@Override
+	public int doOperation(int firstNum, int secondNum) {
+		return firstNum * secondNum;
+	}
+
+}

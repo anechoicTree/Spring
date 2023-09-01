@@ -1,0 +1,19 @@
+package hello;
+
+public class PrintAssembler {
+
+	MyPrinter printer;
+	TransEng transEng;
+	TransKor transKor;
+	
+	public PrintAssembler(MyPrinter printer, TransEng transEng, TransKor tranKor) {
+		
+		this.printer = printer;
+		this.transEng = transEng;
+		this.transKor = transKor;
+	}
+	
+	public void assemble() {
+		printer.print("Hello maven project");
+	}
+}

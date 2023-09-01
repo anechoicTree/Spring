@@ -1,0 +1,6 @@
+package hello;
+
+public interface IPrinter {
+
+	public int doTrans(int selectedLanguage);
+}

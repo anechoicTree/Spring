@@ -1,0 +1,18 @@
+package hello;
+
+import java.util.Scanner;
+
+public class MyPrinter {
+
+	Scanner sc = new Scanner(System.in);
+	int selectedLNum;
+	
+	public void print(String text) {
+		System.out.println(text);
+	}
+	
+	public int select() {
+		selectedLNum = sc.nextInt();
+		return selectedLNum;
+	}
+}
